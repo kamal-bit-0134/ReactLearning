@@ -1,0 +1,15 @@
+Q1) What is Emmet?
+A1) 
+Emmet is a popular plugin for code editors that helps developers write HTML and CSS code faster and more efficiently. Originally known as Zen Coding, Emmet allows developers to use shortcuts, or "abbreviations," to write HTML and CSS code that can be quickly expanded into full HTML and CSS code.
+
+Emmet works by using simple syntax to represent complex code structures. For example, typing "ul>li*3>a" and expanding it with Emmet will result in the following code:
+
+
+<ul>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+</ul>
+
+This can save developers a lot of time when writing code, especially when working on large projects or when trying to meet tight deadlines. Emmet is available for a variety of code editors, including Visual Studio Code, Sublime Text, and Atom.
+
