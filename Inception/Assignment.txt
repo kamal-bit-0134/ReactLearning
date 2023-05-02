@@ -1,0 +1,180 @@
+#what is emmet?
+
+Emmet is a popular plugin for code editors that helps developers write HTML and CSS code faster and more efficiently. Originally known as Zen Coding, Emmet allows developers to use shortcuts, or "abbreviations," to write HTML and CSS code that can be quickly expanded into full HTML and CSS code.
+
+Emmet works by using simple syntax to represent complex code structures. For example, typing "ul>li*3>a" and expanding it with Emmet will result in the following code:
+
+
+<ul>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+</ul>
+
+This can save developers a lot of time when writing code, especially when working on large projects or when trying to meet tight deadlines. Emmet is available for a variety of code editors, including Visual Studio Code, Sublime Text, and Atom.
+
+#what is difference between library and framework
+
+Both libraries and frameworks are tools used by software developers to build applications, but they have some fundamental differences in their architecture and usage.
+
+A library is a collection of pre-written code that developers can use to perform specific tasks or operations. Libraries are designed to be used as building blocks for an application, and they provide a set of functions or APIs that can be called by the developer to perform specific tasks. Developers can use libraries to add functionality to their applications without having to write all the code from scratch. Libraries are generally more flexible and can be used in a variety of applications.
+
+A framework, on the other hand, is a more comprehensive tool that provides a structure for building an entire application. Frameworks provide a set of rules, conventions, and best practices that dictate how the application should be structured and how it should interact with other components. Frameworks often have a specific architecture or design pattern that they follow, which can make it easier for developers to build scalable and maintainable applications. Frameworks are typically more opinionated and may require developers to follow specific guidelines or rules when building an application.
+
+In summary, the main difference between libraries and frameworks is that libraries provide specific functionality that can be used in a variety of applications, while frameworks provide a comprehensive structure and set of guidelines for building an entire application.
+
+
+
+#what is cdn and why do we use it
+
+CDN stands for Content Delivery Network, and it is a system of servers distributed around the world that work together to deliver web content more quickly and efficiently to users. 
+
+When a user requests content from a website, the request is typically sent to a single server that hosts the website. If the user is located far away from the server, the content may take longer to load due to the distance that the data has to travel. This can result in slower load times and a poor user experience.
+
+A CDN works by caching content on servers located around the world, so that when a user requests content, it can be served from a server that is geographically closer to them. This reduces the distance that the data has to travel and can significantly improve the load times for the content.
+
+CDNs can also help to reduce the load on the origin server by handling requests for static assets like images, videos, and JavaScript files. This frees up resources on the origin server to handle more complex requests, such as database queries or dynamic content generation.
+
+In summary, CDNs help to improve the performance and scalability of websites by caching content on servers located around the world and serving that content to users from the server that is geographically closest to them. They can also help to reduce the load on the origin server and improve the overall user experience.
+
+
+#Why is react known as react
+
+React is known as React because it was designed to be a "reactive" or "declarative" way of building user interfaces. React was developed by Facebook in 2011 to address the challenges of building large-scale, complex web applications with rapidly changing data.
+
+At the time, web applications were typically built using the Model-View-Controller (MVC) pattern, which involved separating the application into three components: the data model (Model), the user interface (View), and the business logic (Controller). This approach worked well for small applications, but it became increasingly difficult to manage as applications grew in size and complexity.
+
+React introduced a new approach to building user interfaces that focused on breaking down the UI into smaller, reusable components. Each component had its own internal state and could be updated independently of the rest of the application. This made it easier to manage and maintain large-scale applications with rapidly changing data.
+
+React is also known for its "virtual DOM" which is an in-memory representation of the real DOM. By using the virtual DOM, React can efficiently update the UI based on changes to the application state, without having to update the entire page. This makes React fast and efficient, even for complex applications with large amounts of data.
+
+In summary, React is known as React because it was designed to be a reactive, declarative way of building user interfaces that focused on breaking down the UI into smaller, reusable components and using a virtual DOM to efficiently update the UI based on changes to the application state.
+
+
+#What is cross-origin in the script tag?
+
+Cross-origin is a security concept that restricts web pages from making requests to a different domain or port than the one that the page was loaded from. This is enforced by web browsers to prevent malicious scripts from stealing data or performing unauthorized actions on behalf of the user.
+
+When a web page includes a script tag that loads a script from a different domain or port, the browser will check to see if the server hosting the script allows cross-origin requests. If the server does not explicitly allow cross-origin requests, the browser will block the request and the script will not be loaded.
+
+To allow cross-origin requests, the server hosting the script can set the Access-Control-Allow-Origin header in the response to specify which domains are allowed to make requests. For example, if a script is hosted on `https://example.com` and needs to make requests to `https://api.example.com`, the server hosting the API can set the Access-Control-Allow-Origin header to `https://example.com` to allow cross-origin requests from the example.com domain.
+
+In summary, cross-origin is a security concept that restricts web pages from making requests to a different domain or port than the one that the page was loaded from. Cross-origin requests can be allowed by the server hosting the requested resource by setting the Access-Control-Allow-Origin header in the response.
+
+#What is the difference between React and ReactDOM
+
+React and ReactDOM are two separate packages in the React ecosystem that serve different purposes.
+
+React is a JavaScript library for building user interfaces. It provides a set of tools and conventions for structuring UI components and managing state and events. React allows developers to build complex, reusable UI components that can be composed to create entire applications.
+
+ReactDOM, on the other hand, is a package that provides the glue between React and the DOM (Document Object Model). It contains methods for rendering React components to the browser DOM and managing the lifecycle of those components. ReactDOM is responsible for updating the browser DOM in response to changes in the React component tree.
+
+In other words, React provides the core functionality for building user interfaces, while ReactDOM provides the necessary tools for rendering those interfaces to the browser DOM.
+
+To use React and ReactDOM in a project, both packages must be installed separately. Developers can then import the necessary methods and components from each package to build and render their application.
+
+In summary, React is a JavaScript library for building user interfaces, while ReactDOM provides the necessary tools for rendering those interfaces to the browser DOM. They are two separate packages in the React ecosystem that serve different purposes, but work together to provide a complete solution for building web applications.
+
+#can u explain it in more simple manner with examples?
+
+Sure, I can explain it with an example.
+
+Let's say you are building a web application with React. You would use the React library to define the components that make up your application's user interface. For example, you might define a Header component that displays a logo and navigation links:
+
+jsx
+Copy code
+import React from 'react';
+
+function Header() {
+  return (
+    <header>
+      <img src="logo.png" alt="Logo" />
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+This Header component is defined using React's syntax for describing HTML-like markup in JavaScript code (called JSX). It uses the img, nav, ul, and li HTML tags to define the structure of the component.
+
+Once you have defined your components using React, you need to render them to the browser DOM. This is where ReactDOM comes in. You would use the ReactDOM.render() method to render your top-level component to a specific location in the browser DOM. For example, you might render your Header component to the #header element in your HTML document:
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Header from './Header';
+
+ReactDOM.render(
+  <Header />,
+  document.querySelector('#header')
+);
+This code imports both React and ReactDOM, as well as the Header component that we defined earlier. It then calls ReactDOM.render() with the Header component as the first argument and the #header element as the second argument. This tells ReactDOM to render the Header component to the #header element in the DOM.
+
+So to summarize, React is used to define the components that make up your user interface, while ReactDOM is used to render those components to the browser DOM. They work together to provide a complete solution for building web applications.
+
+
+
+
+
+
+#where is #header?
+
+#header is a CSS selector used to target an HTML element with the id attribute set to "header". In the example I provided earlier, the ReactDOM.render() method is called with document.querySelector('#header') as the second argument. This method call selects the HTML element in the document that has the id attribute set to "header".
+
+For example, if your HTML document has the following code:
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My React App</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="content"></div>
+    <div id="footer"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
+Then document.querySelector('#header') would select the div element with the id attribute set to "header". The ReactDOM.render() method would then render the Header component to this div element in the browser DOM.
+
+
+
+#What is difference between react.development.js and react.production.js files via CDN?
+
+react.development.js and react.production.js are two different versions of the React library that are optimized for different environments: development and production.
+
+react.development.js is the development version of React, which is optimized for ease of debugging and development. It includes extra warnings and error messages that are helpful during development, but are not needed in production. The file is larger in size because it includes additional code for debugging purposes.
+
+react.production.js, on the other hand, is the production version of React, which is optimized for performance and file size. It has been minified and stripped of extra warnings and error messages that are not needed in production. This file is smaller in size compared to the development version.
+
+When using React via a CDN, you should use the appropriate version of the React library depending on the environment you are deploying to. In development, you should use react.development.js for easier debugging and development, while in production, you should use react.production.js for better performance and smaller file size.
+
+To use the appropriate version of React, you can include the appropriate file from the CDN, like so:
+
+-code
+<!-- Development version of React for development -->
+<script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+
+<!-- Production version of React for production -->
+<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+
+Note that the URL includes the version number of React (17.0.2 in this example), and the file extension (js or min.js), which determines whether it's the development or production version of React.
+
+#What are async and defer? 
+
+async and defer are attributes that can be added to the script tag in HTML, which affect how the browser downloads and executes the script.
+
+async attribute tells the browser to download the script asynchronously while continuing to parse the HTML document. When the script is downloaded, it executes immediately, which can potentially block the rendering of the page until the script has finished executing. This is useful for scripts that do not depend on the rest of the page content or other scripts.
+
+code
+<script async src="script.js"></script>
+defer attribute tells the browser to download the script asynchronously, but to wait until the entire HTML document has been parsed before executing the script. This means that the script will be executed after the page has finished rendering, and will not block the rendering of the page. This is useful for scripts that need to wait for the page content or other scripts to be loaded.
+
+code
+<script defer src="script.js"></script>
+It's important to note that the async and defer attributes should only be used for scripts that are not essential to the rendering of the page, such as analytics or social media widgets. For scripts that are required for the page to function properly, the async and defer attributes should not be used, and the script should be included without any attributes, so that it is downloaded and executed synchronously.

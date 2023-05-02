@@ -1,0 +1,31 @@
+{
+  "name": "namasteprcl",
+  "version": "1.0.0",
+  "description": "In this we are learning about parcel and package ,node_module etc",
+  "scripts": {
+    "start":"parcel index.html",
+    "build":"parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamal-bit-0134/ReactLearning.git"
+  },
+  "author": "Kamal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamal-bit-0134/ReactLearning/issues"
+  },
+  "homepage": "https://github.com/kamal-bit-0134/ReactLearning#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }, 
+  "browsersList":[
+    "Last 2 versions"
+  ]
+}
